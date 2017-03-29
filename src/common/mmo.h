@@ -8,14 +8,14 @@
 *                            www.brathena.org                                *
 ******************************************************************************
 * src/common/mmo.h                                                           *
-* Configurações básicas, definições e limites do emulador                    *
+* ConfiguraÃ§Ãµes bÃ¡sicas, definiÃ§Ãµes e limites do emulador                    *
 ******************************************************************************
 * Copyright (c) brAthena Dev Team                                            *
 * Copyright (c) Hercules Dev Team                                            *
 * Copyright (c) Athena Dev Teams                                             *
 *                                                                            *
-* Licenciado sob a licença GNU GPL                                           *
-* Para mais informações leia o arquivo LICENSE na raíz do emulador           *
+* Licenciado sob a licenÃ§a GNU GPL                                           *
+* Para mais informaÃ§Ãµes leia o arquivo LICENSE na raÃ­z do emulador           *
 *****************************************************************************/
 
 #ifndef COMMON_MMO_H
@@ -125,8 +125,9 @@
 //Official Limit: 2.1b ( the var that stores the money doesn't go much higher than this by default )
 #define MAX_BANK_ZENY INT_MAX
 
-// Nível Max. Global (Base)
-// [CarlosHenrq, 2016-10-27] 175 somente quando em execução no modo renewal.
+// NÃ­vel Max. Global (Base)
+// [CarlosHenrq, 2016-10-27] 175 somente quando em execuÃ§Ã£o no modo renewal.
+// NecessÃ¡rio editar o arquivo: conf/battle/player.conf nas linhas 218, 221, 224...
 #ifdef RENEWAL
 	#define MAX_LEVEL 175
 #else
@@ -534,7 +535,7 @@ struct mmo_charstatus {
 	short robe;
 
 	// Porque o servidores de mapa e personagem devem saber o userid sendo que
-	// Todas as validações realizadas são através do account_id? [CarlosHenrq, 2016-10-27]
+	// Todas as validaÃ§Ãµes realizadas sÃ£o atravÃ©s do account_id? [CarlosHenrq, 2016-10-27]
 	// char name[NAME_LENGTH], userid[NAME_LENGTH], last_ip[16];
 	char name[NAME_LENGTH], last_ip[16];
 	unsigned int base_level,job_level;
@@ -944,7 +945,7 @@ enum {
 	JOB_MAX,
 };
 
-//Classe inicial para cada raça
+//Classe inicial para cada raÃ§a
  enum {
   	RACE_HUMAN = 0,
 	RACE_DORAM = 4218
